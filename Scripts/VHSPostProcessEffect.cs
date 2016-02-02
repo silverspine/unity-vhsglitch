@@ -1,4 +1,5 @@
 ﻿using UnityEngine;
+using UnityStandardAssets.ImageEffects;
 using System.Collections;
 
 [RequireComponent (typeof(Camera))]
@@ -20,7 +21,7 @@ public class VHSPostProcessEffect : PostEffectsBase {
 
 	float yScanline, xScanline;
 
-	public override void Start() {
+	public new void Start() {
 		//m = new Material(shader);
 		//m.SetTexture("_VHSTex", VHS);
 		//m.hideFlags = HideFlags.DontSave;
